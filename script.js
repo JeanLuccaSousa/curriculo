@@ -1,11 +1,11 @@
 // Portoghese 
 $(document).ready(()=> { 
     $('.pt').click(function() {
-        $('.sobre').text('Sobre mim')
-        $('.sobre').text('Desenvolvedor Front-End')
-        $('.ferramentas_trabalho').text('Principais ferramentas de trabalho')
-        $('.botoes').text('Baixar CV')
-        $('.botoes').text('Entre em contato')
+        $('.titulo1').text('Sobre mim')
+        $('.paragrafo1').text('Desenvolvedor Front-End')
+        $('.titulo2').text('Principais ferramentas de trabalho')
+        $('.btn1').text('Baixar CV')
+        $('.btn2').text('Entre em contato')
         $('.rodape').text('Desenvolvido por JeanLuccaSousa')
     });
 }) 
@@ -13,23 +13,24 @@ $(document).ready(()=> {
  // Italian 
 $(document).ready(()=> { 
     $('.it').click(function() {
-        $('.sobre').text('Un po di me')
-        $('.sobre').text('Sviluppatore Front-End')
-        $('.ferramentas_trabalho').text('Principali strumenti di lavoro')
-        $('.botoes1').text('Scarica CV')
-        $('.botoes2').text('Contatto')
+        $('.titulo1').text('Un po di me')
+        $('.paragrafo1').text('Sviluppatore Front-End')
+        $('.titulo2').text('Principali strumenti di lavoro')
+        $('.btn1').text('Scarica CV')
+        $('.btn2').text('Contatto')
         $('.rodape').text('Sviluppato da JeanLuccaSousa')
     });
 }) 
 
+
 // English
 $(document).ready(()=> { 
     $('.en').click(function() {
-        $('.sobre').text('About me')
-        $('.sobre').text('Front-End developer')
-        $('.ferramentas_trabalho').text('Main work tools')
-        $('.botoes').text('Download CV')
-        $('.botoes').text('Contact')
+        $('.titulo1').text('About me')
+        $('.paragrafo1').text('Front-End developer')
+        $('.titulo2').text('Main work tools')
+        $('.btn1').text('Download CV')
+        $('.btn2').text('Contact')
         $('.rodape').text('Developed by JeanLuccaSousa')
     });
 }) 
