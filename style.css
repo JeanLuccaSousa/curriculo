@@ -5,28 +5,112 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Didact Gothic', sans-serif;
     color: #333;
 }
 
-header {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-a {
-    text-decoration: none;
+.container {
+     background-color: #252525; 
+    
+    
 }
 
 .language {
     position: relative;
+    align-items: center;
     width: 120px;
-    margin-left: 40px;
-    font-weight: bold;
+    border: 1px solid red;
+    top: 0;
+    font-weight: bold
+} 
+
+.language-selected {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.language-selected::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
+}
+
+.language ul {
+    position: absolute;
+    width: 140px;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    padding-top: 10px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+    display: none;
+}
+
+.language ul > li {
+    list-style: none;
+}
+
+.language ul > li > a {
+    display: block;
+    color: #252525;
+    padding-top: 5px 10px;
+}
+
+.language ul > li:hover {
+    background-color: #f8f8f8;
+}
+
+.language ul > li > a::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    
+}
+
+a.pt::before {
+    background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
+}
+
+a.it::before {
+    background-image: url(https://www.worldometers.info/img/flags/it-flag.gif);
+}
+
+a.en::before {
+    background-image: url(https://www.worldometers.info/img/flags/us-flag.gif);
+}
+
+.language:hover ul {
+    display: block;
+}
+
+/* Jquery class */
+.language-selected  .change-pt {
+    background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
+}
+
+.language .change-it:before {
+    background-image: url(https://www.worldometers.info/img/flags/it-flag.gif);
+}
+
+.language-selected .change-en {
+    background-image: url(https://www.worldometers.info/img/flags/us-flag.gif);
 }
 
 .language-selected {
