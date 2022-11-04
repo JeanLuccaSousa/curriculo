@@ -15,26 +15,29 @@ body {
 }
 
 .container {
-     background-color: #252525; 
-    
-    
+    background-image: url('fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .language {
-    position: relative;
-    align-items: center;
-    width: 120px;
-    border: 1px solid red;
-    top: 0;
-    font-weight: bold
+    align-items: center; 
+    max-width: 150px;
+   border: 1px solid red;
+    margin:auto; 
+    font-weight: bold;
+    padding-top: 10px
 } 
 
 .language-selected {
+    
     display: flex;
-    align-items: center;
+    align-items: center; 
     color: #fff;
     cursor: pointer;
 }
+
 
 .language-selected::before {
     content: '';
@@ -53,7 +56,7 @@ body {
     width: 140px;
     background-color: #fff;
     border: 1px solid #f8f8f8;
-    padding-top: 10px;
+ 
     box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
     display: none;
 }
@@ -63,9 +66,9 @@ body {
 }
 
 .language ul > li > a {
-    display: block;
+    display: flex;
     color: #252525;
-    padding-top: 5px 10px;
+    padding-top: 10px 10px
 }
 
 .language ul > li:hover {
@@ -84,6 +87,8 @@ body {
     
 }
 
+
+
 a.pt::before {
     background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
 }
@@ -101,15 +106,15 @@ a.en::before {
 }
 
 /* Jquery class */
-.language-selected  .change-pt {
+.language-selected.change-pt::before {
     background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
 }
 
-.language .change-it:before {
+.language-selected.change-it::before {
     background-image: url(https://www.worldometers.info/img/flags/it-flag.gif);
 }
 
-.language-selected .change-en {
+.language-selected.change-en::before {
     background-image: url(https://www.worldometers.info/img/flags/us-flag.gif);
 }
 
@@ -118,6 +123,26 @@ a.en::before {
     align-items: center;
     color: #fff;
     cursor: pointer;
+}
+
+.first-content {
+    margin-top: 50px;
+    height: 160px;
+    justify-content: space-around;
+    display: flex;
+    border: 1px solid red;
+}
+
+.second-content {
+    border: 1px solid red;
+    height: 350px;
+    margin-top: 50px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid yellow;
 }
 
 

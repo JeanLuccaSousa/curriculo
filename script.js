@@ -1,8 +1,10 @@
 // Portoghese 
 $(document).ready(()=> { 
     $('.pt').click(function() {
-        $('.language-selected').text('Português-Brasil')
-        $('.language-selected').addClass('.change-pt')
+        $('.titulo1').text('Sobre mim')
+        $('.language-selected').text('Português')
+        $('.language-selected').addClass('change-pt')
+      
         $('.titulo1').text('Sobre mim')
         $('.paragrafo1').text('Desenvolvedor Front-End')
         $('.titulo2').text('Principais ferramentas de trabalho')
@@ -16,8 +18,9 @@ $(document).ready(()=> {
 $(document).ready(()=> { 
     $('.it').click(function() {
         $('.titulo1').text('Un po di me')
-        $('.language').addClass('change.it')
         $('.language-selected').text('Italiano')
+        $('.language-selected').addClass('change-it')
+      
         $('.paragrafo1').text('Sviluppatore Front-End')
         $('.titulo2').text('Principali strumenti di lavoro')
         $('.btn1').text('Scarica CV')
@@ -29,10 +32,12 @@ $(document).ready(()=> {
 
 // English
 $(document).ready(()=> { 
+    
     $('.en').click(function() {
         $('.titulo1').text('About me')
         $('.language-selected').text('English')
-        $('.language-selected').addClass('.change-en')
+        $('.language-selected').addClass('change-en')
+       
         $('.paragrafo1').text('Front-End developer')
         $('.titulo2').text('Main work tools')
         $('.btn1').text('Download CV')
