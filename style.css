@@ -9,17 +9,16 @@ a {
     text-decoration: none;
 }
 
-body {
-    font-family: 'Didact Gothic', sans-serif;
-    color: #333;
-}
 
-.container {
-    background-image: url('fundo.jpg');
+body {
+    height: 100vh;
+    background-image: url(fundo.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
+
+
 
 .language {
     align-items: center; 
