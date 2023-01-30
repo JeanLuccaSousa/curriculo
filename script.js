@@ -9,7 +9,7 @@ $(document).ready(()=> {
         $('.titulo2').text('Principais ferramentas de trabalho')
         $('.btn1').text('Baixar CV')
         $('.btn2').text('Entre em contato')
-        $('.rodape').text('Desenvolvido por JeanLuccaSousa')
+        $('.rodape').text('Desenvolvido por Jean Lucca De Sousa')
     });
 }) 
 
@@ -23,7 +23,7 @@ $(document).ready(()=> {
         $('.titulo2').text('Principali strumenti di lavoro')
         $('.btn1').text('Scarica CV')
         $('.btn2').text('Contatto')
-        $('.rodape').text('Sviluppato da JeanLuccaSousa')
+        $('.rodape').text('Sviluppato da Jean Lucca De Sousa')
     });
 }) 
 
@@ -37,6 +37,9 @@ $(document).ready(()=> {
         $('.titulo2').text('Main work tools')
         $('.btn1').text('Download CV')
         $('.btn2').text('Contact')
-        $('.rodape').text('Developed by JeanLuccaSousa')
+        $('.rodape').text('Developed by Jean Lucca De Sousa')
     });
+
+    var teste = document.getElementById("git");
+    teste.innerHTML = 'target="blank_"'
 }) 
