@@ -5,46 +5,37 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+:root {
+    --cor0: #161616;
+    --cor1: #222222;
+    --cor3: #CC3232;
+    --cor4: rgba(24,24,24,0.6);
+    --cor5: #fff;
+    --fonte: 'Poppins', sans-serif;
+    --fonte2: 'Roboto Flex','sans-serif'
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body {
-    height: 100vh;
-    /* background-image: url(fundo.jpg);  */
-    /* background-color: black; */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&display=swap');
+
+.div_header {
+    height: 50px;
+    background-color: var(--cor0);
 }
 
 .language {
-    
-    /* border: 1px solid black; */
     width: 140px;
-    /* margin: auto; */
     float: right;
 }
-
-.teste {
-   
-    height: 50px;
-    background-color: #161616;
-}
-
-
 
 .language-selected {
     display: flex;
     align-items: center; 
-    color: #fff;
+    color: var(--cor5);
     cursor: pointer;
-}
-
-.container {
-    border: 1px solid green;
-    
 }
 
 .language-selected::before {
@@ -63,15 +54,9 @@ body {
     padding: 10px;
 }
 
-
-
 .language ul > li {
     list-style: none;
 }
-
-
-
-
 
 .language ul > li > a::before {
     content: '';
@@ -82,35 +67,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 10px;
-    
-}
-
-.idioma {
-    
-    justify-content: flex-end;
-    width: 140px;
-    
-    
-}
-
-.idioma li {
-    display: inline;
-}
-
-
-
-a.pt::before {
-    background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
-    width: 50px;
-    height: 50px;
-}
-
-a.it::before {
-    background-image: url(https://www.worldometers.info/img/flags/it-flag.gif);
-}
-
-a.en::before {
-    background-image: url(https://www.worldometers.info/img/flags/us-flag.gif);
 }
 
 .language:hover ul {
@@ -133,109 +89,281 @@ a.en::before {
 .language-selected {
     display: flex;
     align-items: center;
-    color: #fff;
+    color: var(--cor5);
     cursor: pointer;
 }
 
-.first-content {
-    /* margin-top: 50px; */
-    height: 160px;
-    justify-content: space-between;
-    display: flex;
-    /* border: 1px solid red; */
-    background: #222222
+.idioma {
+    justify-content: flex-end;
+    width: 140px;
 }
 
-.second-content {
-     border: 1px solid red; 
-    height: 400px;
-    margin-top: 50px;
+.idioma li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.pt::before {
+    background-image: url(imagens/icons8-brasil-48.png);
+    /* background-image: url(https://www.worldometers.info/img/flags/br-flag.gif); */
+    width: 50px;
+    height: 50px;
+}
+
+a.it::before {
+    background-image: url(imagens/icons8-itália-48.png);
+    /* background-image: url(https://www.worldometers.info/img/flags/it-flag.gif); */
+}
+
+a.en::before {
+    background-image: url(imagens/icons8-eua-48.png);
+    /* background-image: url(https://www.worldometers.info/img/flags/us-flag.gif); */
+}
+
+.first-content {
+    height: 240px;
+    justify-content: space-between;
+    display: flex;
+    background-color: var(--cor1);
+}
+
+.sobre {
+    margin: auto;
+    width: 600px;
+    height: 150px;
+    color: var(--cor5);
 }
 
 .paragrafo1 {
     text-align: center;
-    margin-top: 5px;
-    font-weight: 500;
-    font-size: 18px;
-    /* border: 1px solid red; */
-}
-
-.div_button {
-    /* border: 1px solid red; */
-    text-align: center;
-    margin: auto;
     margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: var(--fonte);
 }
 
-.button {
-   
-    width: 120px;
-    height: 50px;
-    /* position: absolute; */
-    background-color: transparent;
-    border: 1px solid #CC3232;
-    border-radius: 4px;
-    color: #CC3232;
-    font-size: 14px;
-    cursor: pointer;
- 
-}
-
-.skills {
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid yellow;
-}
-
-.titulo2 {
-    color: #CC3232; 
+.paragrafo2 {
     text-align: center;
-    border: 1px solid blue;
-    font-weight: 500;
-    font-family: "Poppis";
-    font-size: 40px;
-}
-
-.titulo1 {
-    text-align: center;
-}
-
-.sobre {
-    /* border: 1px solid yellow; */
-    margin: auto;
-    width: 600px;
-    height: 150px;
-    color: #fff;
-    
-}
-
-.rodape {
-    border: 1px solid purple;
-    margin-top: 170px;
-    text-align: center;
-    color: #CC3232;
+    margin-top: 10px;
+    font-weight: 400;
     font-size: 18px;
-    font-family: "Poppis";
+    font-family: var(--fonte2);
 }
 
-.social_links {
-    justify-content: space-between;
-    border: 1px solid black;
-    display: flex;
+.div_botao {
+    text-align: center;
+    margin: auto;
     margin-top: 40px;
 }
 
-/* .profile-image {
-    margin-left: 180px;
-    border-radius: 50%;
- 
-    
-} */
+.botao_github {
+    width: 140px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--cor3);
+    border-radius: 4px;
+    color: var(--cor3);
+    font-family: var(--fonte2);
+    font-size: 18px;
+    cursor: pointer;
+}
 
- /* .profile-image > img {
-    border-radius: 50%;
-    border: 2px solid black;
-   
-}  */
+.second-content {
+    background-color: var(--cor0);
+}
+
+.descricao {
+    height: 280px;
+    background-color: var(--cor0);
+}
+
+.descricao > p {
+    color: var(--cor5);
+    line-height: 25px;
+}
+
+.sobre-mim {
+    font-family: var(--fonte);
+    font-weight: 400;
+    color: var(--cor3);
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sobre-paragrafo {
+    font-family: var(--fonte2);
+    color: var(--cor5);
+    font-size: 18px;
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 25px;
+    margin: 10px;
+}
+
+.titulo3 {
+    margin: 10px;
+}
+
+.titulo3 > h3 {
+    font-family: var(--fonte2);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--cor5);
+    text-indent: 50px;
+}
+
+.lista {
+    margin: 10px;
+}
+
+.lista > li {
+    font-family: var(--fonte2);
+    color: var(--cor5);
+    line-height: 25px;
+    text-indent: 100px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.titulo2 {
+    color: var(--cor3); 
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--fonte);
+    padding: 15px;
+}
+
+.div_habilidades {
+    display: flex; 
+    padding: 30px;
+    justify-content: space-around; 
+} 
+
+.classe_habilidades {
+    text-align: center;
+}
+
+.p1,.p2,.p3,.p4,.p5,.p6,.p7 {
+    font-family: var(--fonte2);
+    font-size: 18px;
+    color: var(--cor3);
+}
+
+.social_links {
+    justify-content: space-around;
+    background-color: var(--cor1);
+    display: flex;
+    padding: 40px;
+    margin-top: 50px; 
+}
+
+.contato {
+    font-family: var(--fonte2);
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--cor3);
+}
+
+.email {
+    text-align: center;
+}
+
+.email > span {
+    color: var(--cor3);
+    margin-top: 10px;
+    display: flex;
+    font-family: var(--fonte2);
+    font-size: 20px;
+}
+
+.linkedin {
+    text-align: center;
+} 
+
+.botao_linkedin {
+    margin-top: 5px;
+    width: 140px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--cor3);
+    border-radius: 4px;
+    color: var(--cor3);
+    font-family: var(--fonte2);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.rodape {
+    background-color: var(--cor0);
+    padding: 15px;
+    height: 50px ;
+    text-align: center;
+    color: var(--cor3);
+    font-size: 20px;
+    font-family: var(--fonte2);
+}
+
+/* -- Responsividade -- */
+
+@media screen and (max-width: 480px) {
+    .sobre-mim {
+        font-size: 25px;
+    }
+
+    .descricao {
+        height: 540px!important;
+    }
+
+    .sobre-paragrafo {
+        width: 100%;
+        padding: 5px;
+        margin: 0!important;
+        text-indent: 0!important;
+    }
+
+    .titulo2 {
+        font-size: 25px;
+        padding-bottom: 0!important;
+    }
+
+    .titulo3 {
+        margin: 5px;
+    }
+
+    .titulo3 > h3 {
+        text-indent: 0!important;
+    }
+
+    .lista > li {
+        text-indent: 0!important;
+        line-height: 25px;
+        list-style: decimal;
+    }
+
+    .div_habilidades {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .social_links {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0px!important;
+    }
+
+    .classe_habilidades {
+        padding: 10px;
+    }
+
+    .email {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
 
 

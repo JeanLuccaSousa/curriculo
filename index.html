@@ -1,113 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppis">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/jean.ico.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppis"> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <!-- <script src="jquery-3.6.0.min.js"></script> -->
     <script src="script.js"></script>
 
-    <title>Sobre mim</title>
+    <title class="titulo_inicio">Sobre mim</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="teste">
+        <div class="div_header">
             <header class="language">
-                <!-- <div class="language-selected">
-                    Português
-                </div> -->
-
-            <ul class="idioma">
+                <ul class="idioma">
                     <li><a href="#" class="pt"></a></li>
                     <li><a href="#" class="it"></a></li>
                     <li><a href="#" class="en"></a></li>
-            </ul>
+                </ul>
             </header>
-    </div>
+        </div>
 
         <nav class="first-content">
             <!-- <div class="profile-image">
-                 <img height="150px" width="150px" src="nj_jack.jpg" alt="developer picture"> 
+                 <img height="150px" width="150px" src="" alt="developer picture"> 
             </div> -->
 
             <div class="sobre">
-                <h2 class="titulo1">Sobre mim</h2>
-                <p class="paragrafo1">Olá, meu nome é Jean Lucca de Sousa</p>
-                <!-- <p>E este é meu portifólio</p>
-            </div> -->
-
-            <div class="div_button">
-                <button class="button" target="_blank" href="https://github.com/JeanLuccaSousa">Meu Github</button>
-            </div> 
+                <h1 class="paragrafo1">Olá, meu nome é Jean Lucca de Sousa!</h1>
+                <p class="paragrafo2">E este é meu Portfólio</p>
+                <div class="div_botao">
+                    <button class="botao_github" onclick="abrirGithub()" target="_blank"
+                        href="https://github.com/JeanLuccaSousa">Meu GitHub</button>
+                </div>
+            </div>
         </nav>
 
         <main class="second-content">
+            <div class="descricao">
+                <h1 class="sobre-mim">Sobre mim</h1>
+                <p class="sobre-paragrafo">Me chamo Jean e sou desenvolvedor web júnior e trabalho com desenvolvimento Front-End. Desenvolvi minha paixão por programação quando, por curiosidade, comecei a criar páginas da web estudando sozinho. As minhas principais competências são: Organização, aptidão para trabalho em equipe, flexibilidade e responsabilidade. 
+                    <div class="titulo3">
+                        <h3 class="habilidades">Habilidades:</h3>
+                    </div>
+                    <div class="lista">
+                        <li class="lista1">Conoscenza dei principali linguagi web: HTML, CSS, JAVASCRIPT, JQUERY, BOOTSTRAP e WORDPRESS;</li>
+                        <li class="lista2">Conhecimento básico de Java e PHP;</li>
+                        <li class="lista3">Conhecimento básico de Banco de Dados MySQL;</li>
+                        <li class="lista4">Conhecimento do repositório git (GitHub, Gitlab);</li>
+                        <li class="lista5">VsCode e NetBeans.</li>
+                    </div>
+                </p>
+            </div>
             <div class="ferramentas_trabalho">
-                <h2 class="titulo2">Principais ferramentas de trabalho</h2>
+                <h1 class="titulo2">Principais ferramentas de trabalho</h1>
             </div>
 
-            <div class="skills">
-                <div>
-                    <img src="icons8-javascript-logo-50.png" alt="">
-                    <p style="color: #CC3232; font-size: 16px; font-family: Poppis;">JavaScript</p>
+            <div class="div_habilidades">
+                <div class="classe_habilidades">
+                    <img src="imagens/icons8-logotipo-javascript-50.png" alt="logotipo javascript Icons8">
+                    <p class="p1">JAVASCRIPT</p>
                 </div>
-                <div>
-                    <img src="icons8-jquery-50.png" alt="">
-                    <p style="color: #CC3232;">JQuery</p>
+                <div class="classe_habilidades">
+                    <img src="imagens/icons8-jquery-50 (1).png" alt="logotipo jquery Icons8">
+                    <p class="p2">JQUERY</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p >React Js</p>
+                <div class="classe_habilidades">
+                    <img src="imagens/icons8-html-5-50.png" alt="logotipo html5 Icons8">
+                    <p class="p3">HTML</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p>TypeScript</p>
+                <div class="classe_habilidades">
+                    <img width="50px" src="imagens/icons8-css3-50 (1).png" alt="logotipo css3 Icons8">
+                    <p class="p4">CSS3</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Java</p>
+                <div class="classe_habilidades">
+                    <img src="imagens/icons8-logo-java-coffee-cup-50.png" alt="logotipo Java Icons8">
+                    <p class="p5">JAVA</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p>PHP</p>
+                <div class="classe_habilidades">
+                    <img src="imagens/icons8-logo-php-50.png" alt="logotipo php Icons8">
+                    <p class="p6">PHP</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p>WordPress</p>
+                <div class="classe_habilidades">
+                    <img src="imagens/icons8-wordpress-50.png" alt="logotipo wordpress Icons8">
+                    <p class="p7">WORDPRESS</p>
                 </div>
             </div>
             <div class="social_links">
-                <div>
-                    <img src="" alt="">
-                    <p>E-mail</p>
+                <h2 class="contato">Meus Contatos</h2>
+                <div class="email">
+                    <img src="imagens/icons8-mail-50.png" alt="logotipo email Icons8">
+                    <!-- <p>E-mail</p> -->
+                    <span>jeansousa59@outlook.com</span>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Linkedin</p>
+                <div class="linkedin">
+                    <img src="imagens/icons8-linkedin-circundado-50.png" alt="logotipo linkedin Icons8">
+                    <!-- <p>Linkedin</p> -->
+                    <div>
+                        <button class="botao_linkedin" onclick="abrirLinkedin()">Meu linkedin</button>
+                    </div>
                 </div>
-                <!-- <div>
-                    <img src="" alt="">
-                    <a target="_blank" href="https://github.com/JeanLuccaSousa">Github</a>
-                </div> -->
             </div>
-
-            <!-- <div>
-                <div class="botoes">
-                    <button class="btn1">Baixar Cv</button>
-                    <button class="btn2">Entre em Contato</button>
-                </div>
-            </div> -->
-        
-
-        <footer class="rodape">
-            <span>Desenvolvido por Jean Lucca De Sousa</span>
-        </footer>
+            <footer class="rodape">
+                <span>Desenvolvido por Jean Lucca De Sousa</span>
+            </footer>
+        </main>
     </div>
-</main>
+
+    <script>
+        function abrirGithub() {
+            window.open("https://github.com/JeanLuccaSousa");
+        }
+
+        function abrirLinkedin() {
+            window.open("https://it.linkedin.com/in/jean-lucca-de-sousa-5063bb1a4");
+        }
+    </script>
 
 </body>
+
 </html>
