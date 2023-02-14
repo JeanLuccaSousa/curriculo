@@ -12,14 +12,11 @@
     --cor4: rgba(24,24,24,0.6);
     --cor5: #fff;
     --fonte: 'Poppins', sans-serif;
-    --fonte2: 'Roboto Flex','sans-serif'
+    --fonte2: 'Arial', 'Helvetica' , 'sans-serif';
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&display=swap');
 
 .div_header {
     height: 50px;
@@ -182,7 +179,7 @@ a.en::before {
 
 .descricao > p {
     color: var(--cor5);
-    line-height: 25px;
+    line-height: 1.5em;
 }
 
 .sobre-mim {
@@ -227,6 +224,10 @@ a.en::before {
     text-indent: 100px;
     font-size: 18px;
     text-align: justify;
+}
+
+.ferramentas_trabalho {
+    margin-top: 25px;
 }
 
 .titulo2 {
@@ -323,6 +324,10 @@ a.en::before {
         padding: 5px;
         margin: 0!important;
         text-indent: 0!important;
+    }
+
+    .ferramentas_trabalho {
+        margin-top: 20px!important;
     }
 
     .titulo2 {
