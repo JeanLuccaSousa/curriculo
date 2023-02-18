@@ -1,6 +1,6 @@
 // Portoghese 
-$(document).ready(()=> { 
-    $('.pt').click(function() {
+$(document).ready(() => {
+    $('.pt').click(function () {
         $('.titulo_inicio').text('Sobre mim')
         $('.titulo1').text('Sobre mim')
         $('.language-selected').text('Português')
@@ -22,11 +22,11 @@ $(document).ready(()=> {
         $('.botao_linkedin').text('Meu linkedin')
         $('.rodape').text('Desenvolvido por Jean Lucca De Sousa')
     });
-}) 
+})
 
- // Italian 
-$(document).ready(()=> { 
-    $('.it').click(function() {
+// Italian 
+$(document).ready(() => {
+    $('.it').click(function () {
         $('.titulo_inicio').text('Un po di me')
         $('.titulo1').text('Un po di me')
         $('.language-selected').text('Italiano')
@@ -47,11 +47,11 @@ $(document).ready(()=> {
         $('.botao_linkedin').text('Mio linkedin')
         $('.rodape').text('Sviluppato da Jean Lucca De Sousa')
     });
-}) 
+})
 
 // English
-$(document).ready(()=> { 
-    $('.en').click(function() {
+$(document).ready(() => {
+    $('.en').click(function () {
         $('.titulo_inicio').text('About me')
         $('.titulo1').text('About me')
         $('.language-selected').text('English')
@@ -72,7 +72,42 @@ $(document).ready(()=> {
         $('.botao_linkedin').text('My linkedin')
         $('.rodape').text('Developed by Jean Lucca De Sousa')
     });
-}) 
+})
+
+/* --- Ajuste altura da classe descricao em mobile --- */ 
+
+$(document).ready(() => {
+    $('.pt').click(function () {
+        if (window.screen.availWidth <= 600) {
+            if ($('.language-select' == '.change-pt')) {
+                $('.descricao').addClass('ajuste_pt').removeClass('ajuste_en' && 'ajuste_it')
+                $('.descricao').addClass('ajuste_pt').removeClass('ajuste_it' && 'ajuste_en')
+            }
+        }
+    });
+
+    $('.it').click(function () {
+        if (window.screen.availWidth <= 600) {
+            if ($('.language-select' == '.change-it')) {
+                $('.descricao').addClass('ajuste_it').removeClass('ajuste_pt' && 'ajuste_en')
+                $('.descricao').addClass('ajuste_it').removeClass('ajuste_en' && 'ajuste_pt')
+            }
+        }
+    });
+
+    $('.en').click(function () {
+        if (window.screen.availWidth <= 600) {
+            if ($('.language-select' == '.change-en')) {
+                $('.descricao').addClass('ajuste_en').removeClass('ajuste_pt' && 'ajuste_it')
+                $('.descricao').addClass('ajuste_en').removeClass('ajuste_it' && 'ajuste_pt')
+            }
+        }
+    });
+})
+
+
+
+
 
 
 

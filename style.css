@@ -368,6 +368,18 @@ a.en::before {
         margin-top: 15px;
         margin-bottom: 15px;
     }
+
+    .ajuste_pt {
+        height: 540px!important;
+    }
+
+    .ajuste_it {
+        height: 500px!important;
+    }
+
+    .ajuste_en {
+        height: 470px!important;
+    }
 }
 
 
